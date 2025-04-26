@@ -72,6 +72,25 @@ ol {
     list-style: none;
 }
 
+@keyframes appear {
+    /* Start of the animation */
+    from {
+        opacity: 0.6; /* it starts with 50% opacity */
+        scale: 0.9; /* it starts slightly smaller */
+    }
+    /* End of the animation */
+    to {
+        opacity: 1; /* it returns to its original opacity */
+        scale: 1; /* it returns to its original size */
+    }
+}
+
+.appear {
+    animation: appear linear;
+    animation-timeline: view(); /* the animation will start when it is visible to the screen */
+    animation-range: entry 0% cover 40%; /* the animation will end when it reaches 40% of the screen */
+}
+
 /* header with nav bar */
 header {
     background-color: var(--clr-blue-50);
