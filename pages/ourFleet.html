@@ -5,25 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home Page</title>
         <!-- favicon -->
-        <link rel="icon" href="images/icons/favicon.ico" />
+        <link rel="icon" href="/images/logo.png" />
         <!-- main css - every file should have it -->
-        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="/styles/main.css" />
         <!-- individual css - the styles for every file -->
-        <link rel="stylesheet" href="styles/index.css" />
+        <link rel="stylesheet" href="/styles/ourFleet.css" />
     </head>
     <body>
         <header>
             <div class="headerLogo">
-                <a href="index.html"
-                    ><img src="images/logo.png" alt="HistoryCipher logo"
+                <a href="/index.html"
+                    ><img src="/images/logo.png" alt="HistoryCipher logo"
                 /></a>
             </div>
             <div class="headerContainer">
                 <nav>
                     <ul class="headerNavList">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/index.html">Home</a></li>
                         <li>
-                            <a href="pages/ourFleet.html">Our Fleet</a>
+                            <a href="">Our Fleet</a>
                         </li>
                         <li><a href="">Pricing</a></li>
                         <li>
@@ -39,336 +39,63 @@
                 </button>
             </div>
         </header>
-        <section class="hero appear">
-            <div class="heroBackground">
-                <video autoplay muted loop playsinline>
-                    <source
-                        src="images/video-background.mp4"
-                        type="video/mp4"
-                    />
-                </video>
-                <div class="heroBackgroundOverlay"></div>
-            </div>
-            <div class="heroGridLayout">
-                <div class="heroContainer">
-                    <h1 class="heroTitle">
-                        Find your perfect <br />
-                        <span>rental car</span>
-                    </h1>
-                    <p class="heroParagraph">
-                        Explore our wide selection of vehicles at affordable
-                        <br />
-                        prices. Easy booking, flexible pickup and return <br />
-                        options.
-                    </p>
-                    <button class="heroButton">
-                        <a href="">Book a Car</a>
-                    </button>
-                </div>
-                <div class="heroLocations">
-                    <h2 class="heroLocationsTitle">Locations</h2>
-                    <div class="heroLocationStairway">
-                        <!-- card 1 -->
-                        <a href="#" class="card1">
-                            <div class="heroLocationStairwayCard">
-                                <img
-                                    src="images/burgas.jpg"
-                                    alt="image of the city"
-                                />
-                                <div class="cardIconAndCity">
-                                    <svg
-                                        width="25px"
-                                        height="25px"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
-                                            stroke="#4592ec"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
-                                            stroke="#4592ec"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                    <h2 class="heroLocationStairwayCardTitle">
-                                        Burgas
-                                    </h2>
-                                </div>
-                                <p class="heroLocationStairwayCardParagraph">
-                                    Coastal city with beautiful beaches
-                                </p>
-                            </div>
-                        </a>
-                        <!-- card 2 -->
-                        <a href="#" class="card2">
-                            <div class="heroLocationStairwayCard">
-                                <img
-                                    src="images/varna.jpg"
-                                    alt="image of the city"
-                                />
-                                <div class="cardIconAndCity">
-                                    <svg
-                                        width="25px"
-                                        height="25px"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
-                                            stroke="#4592ec"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
-                                            stroke="#4592ec"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                    <h2 class="heroLocationStairwayCardTitle">
-                                        Varna
-                                    </h2>
-                                </div>
-                                <p class="heroLocationStairwayCardParagraph">
-                                    Seaside resort city with golden beaches
-                                </p>
-                            </div>
-                        </a>
-                        <!-- card 3 -->
-                        <a href="#" class="card3">
-                            <div class="heroLocationStairwayCard">
-                                <img
-                                    src="images/sofia.jpg"
-                                    alt="image of the city"
-                                />
-                                <div class="cardIconAndCity">
-                                    <svg
-                                        width="25px"
-                                        height="25px"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
-                                            stroke="#4592ec"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
-                                            stroke="#4592ec"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                    <h2 class="heroLocationStairwayCardTitle">
-                                        Sofia
-                                    </h2>
-                                </div>
-                                <p class="heroLocationStairwayCardParagraph">
-                                    Capital city with international airport
-                                </p>
-                            </div>
-                        </a>
-                        <!-- card 4 -->
-                        <a href="#" class="card4">
-                            <div class="heroLocationStairwayCard">
-                                <img
-                                    src="images/plovdiv.jpg"
-                                    alt="image of the city"
-                                />
-                                <div class="cardIconAndCity">
-                                    <svg
-                                        width="25px"
-                                        height="25px"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
-                                            stroke="#4592ec"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
-                                            stroke="#4592ec"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                    <h2 class="heroLocationStairwayCardTitle">
-                                        Plovdiv
-                                    </h2>
-                                </div>
-                                <p class="heroLocationStairwayCardParagraph">
-                                    Ancient city with tons to see
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+        <section class="hero">
+            <div class="heroInformation">
+                <h1>Our Fleet</h1>
+                <p>Explore our wide range of premium vehicles</p>
             </div>
         </section>
-        <section class="bestSellers appear">
-            <h2 class="bestSellersTitle">Best Sellers</h2>
-            <p class="bestSellersParagpraph">
-                Choose from our best selling vehicles
-            </p>
-            <div class="bestSellersLayout">
-                <!-- card 1 -->
-                <div class="bestSellersLayoutCard item1">
-                    <img src="images/lambo-new.jpg" alt="car image" />
-                    <div class="CardInformation">
-                        <h3 class="cardTitle">Lamborghini Huracán</h3>
-                        <p class="cardParagpraph">
-                            Petrol • High-speed • 2 Seats
-                        </p>
-                        <div class="cardPrice">
-                            <p>$360 <span>/day</span></p>
-                            <button><a href="">Book Now</a></button>
-                        </div>
-                    </div>
-                </div>
-                <!-- card 2 -->
-                <div class="bestSellersLayoutCard item2">
-                    <img src="images/toyo-new.jpg" alt="car image" />
-                    <div class="CardInformation">
-                        <h3 class="cardTitle">Toyota Corolla</h3>
-                        <p class="cardParagpraph">Hybrid • Safe • 5 Seats</p>
-                        <div class="cardPrice">
-                            <p>$90 <span>/day</span></p>
-                            <button><a href="">Book Now</a></button>
-                        </div>
-                    </div>
-                </div>
-                <!-- card 3 -->
-                <div class="bestSellersLayoutCard item3">
-                    <img src="images/porsche.jpg" alt="car image" />
-                    <div class="CardInformation">
-                        <h3 class="cardTitle">Porsche 911 GT3 RS</h3>
-                        <p class="cardParagpraph">
-                            Petrol • Light-weight • 2 seats
-                        </p>
-                        <div class="cardPrice">
-                            <p>$250 <span>/day</span></p>
-                            <button><a href="">Book Now</a></button>
-                        </div>
-                    </div>
-                </div>
-                <!-- card 4 -->
-                <div class="bestSellersLayoutCard item4">
-                    <img src="images/g-wagon-new.jpg" alt="car image" />
-                    <div class="CardInformation">
-                        <h3 class="cardTitle">G-Class</h3>
-                        <p class="cardParagpraph">
-                            Petrol/Diesel • Spacious • 5 Seats
-                        </p>
-                        <div class="cardPrice">
-                            <p>$150 <span>/day</span></p>
-                            <button><a href="">Book Now</a></button>
-                        </div>
-                    </div>
-                </div>
-                <!-- card 5 -->
-                <div class="bestSellersLayoutCard item5">
-                    <img src="images/toyo-camry-new.jpg" alt="car image" />
-                    <div class="CardInformation">
-                        <h3 class="cardTitle">Toyota Camry</h3>
-                        <p class="cardParagpraph">
-                            Hybrid • Comfortable • 5 Seats
-                        </p>
-                        <div class="cardPrice">
-                            <p>$110 <span>/day</span></p>
-                            <button><a href="">Book Now</a></button>
-                        </div>
-                    </div>
-                </div>
+        <section class="rentablesToolbar">
+            <div class="rentablesSearch">
+                <svg
+                    class="search-icon"
+                    width="22"
+                    height="22"
+                    fill="none"
+                    stroke="#888"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                >
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+                <input type="text" placeholder="Search by brand or model..." />
+            </div>
+            <div class="rentablesActions">
+                <button class="rentablesFilter">
+                    <svg
+                        width="23"
+                        height="23"
+                        fill="none"
+                        stroke="#222"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        opacity="0.9"
+                    >
+                        <path d="M4 4h16v2l-6 7v5l-4 2v-7L4 6V4z" />
+                    </svg>
+                    Filter
+                </button>
+                <select class="rentablesBrands">
+                    <option>All Brands</option>
+                    <option>BMW</option>
+                    <option>Mercedes</option>
+                    <option>Audi</option>
+                    <option>Toyota</option>
+                </select>
             </div>
         </section>
-        <section class="reservation appear">
-            <h2 class="reservationTitle">Quick Reservation</h2>
-            <div class="reservationContainer">
-                <form class="reservationForm">
-                    <label for="pickupLocation">Pick-up Location</label>
-                    <div class="reservationInputGroup">
-                        <select
-                            id="pickupLocation"
-                            name="pickupLocation"
-                            required
-                        >
-                            <!-- makes it that you can't select it -->
-                            <option value="" disabled selected>
-                                Select location
-                            </option>
-                            <option value="sofia">Sofia</option>
-                            <option value="burgas">Burgas</option>
-                            <option value="plovdiv">Plovdiv</option>
-                            <option value="varna">Varna</option>
-                        </select>
+        <section class="rentablesGridLayout">
+            <div class="rentablesCard">
+                <img src="/images/lambo-new.jpg" alt="car image" />
+                <div class="rentablesCardInformation">
+                    <h3>Lamborghini Huracán</h3>
+                    <p>Petrol • High-speed • 2 Seats</p>
+                    <div class="rentablesCardPrice">
+                        <p>$360 <span>/day</span></p>
+                        <button><a href="">Book Now</a></button>
                     </div>
-                    <div class="reservationDate">
-                        <div class="reservationDateRow">
-                            <label for="pickupDate">Pick-up Date</label>
-                            <br />
-                            <input
-                                type="date"
-                                id="pickupDate"
-                                name="pickupDate"
-                                required
-                            />
-                        </div>
-                        <div class="reservationDateRow">
-                            <label for="returnData">Return Date</label>
-                            <br />
-                            <input
-                                type="date"
-                                id="returnData"
-                                name="returnData"
-                                required
-                            />
-                        </div>
-                    </div>
-                    <label for="vehicleBrand">Vehicle Brand</label>
-                    <div class="reservationInputGroup">
-                        <select id="vehicleBrand" name="vehicleBrand" required>
-                            <!-- makes it that you can't select it -->
-                            <option value="" disabled selected>
-                                Select vehicle brand
-                            </option>
-                            <option value="toyota">Toyota</option>
-                            <option value="porsche">Porsche</option>
-                            <option value="mercedes-benz">Mercedes-Benz</option>
-                            <option value="bmw">BMW</option>
-                            <option value="renault">Renault</option>
-                            <option value="volkswagen">Volkswagen</option>
-                            <option value="rolls-royce">Rolls-Royce</option>
-                            <option value="ferrari">Ferrari</option>
-                            <option value="dodge">Dodge</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="reservationButton">
-                        Search Available Cars ->
-                    </button>
-                </form>
+                </div>
             </div>
         </section>
         <footer>

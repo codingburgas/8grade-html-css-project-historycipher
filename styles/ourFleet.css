@@ -1,0 +1,125 @@
+:root {
+    /* every css file should include this root */
+    --clr-blue-50: #fafdff;
+    --clr-blue-100: #ddedfc;
+    --clr-blue-200: #c2e0fb;
+    --clr-blue-300: #99cdf7;
+    --clr-blue-400: #68b1f2;
+    --clr-blue-500: #4592ec;
+    --clr-blue-600: #3076e0;
+    --clr-blue-700: #2761ce;
+    --clr-blue-800: #264fa7;
+    --clr-blue-900: #244584;
+    --clr-blue-950: #1f335f;
+    --clr-blue-1000: #172748;
+    --clr-blue-1050: #0e1629;
+
+    --ff-Montserrat: 'Montserrat';
+    --ff-Inter: 'Inter';
+
+    --hover-duration-slow: 350ms;
+    --hover-duration-normal: 300ms;
+    --hover-duration-fast: 200ms;
+}
+
+.hero {
+    background-color: var(--clr-blue-1000);
+    min-height: 30vh;
+    margin-bottom: 3rem;
+}
+
+.heroInformation {
+    color: var(--clr-blue-50);
+    max-width: 1250px;
+    margin-inline: auto;
+    padding-top: 3.25rem;
+}
+
+.heroInformation h1 {
+    font-size: 2.225rem;
+    margin-bottom: 0.25rem;
+}
+
+.heroInformation p {
+    font-size: 1.25rem;
+}
+
+.rentablesToolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 3.5rem;
+}
+
+.rentablesSearch {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.18);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    min-width: 600px;
+    transition: var(--hover-duration-normal);
+}
+
+/* with .rentablesSearch:focus it doesn't work */
+.rentablesSearch:focus-within {
+    border-color: var(--clr-blue-500);
+    transform: scale(1.02);
+}
+
+.rentablesSearch input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    opacity: 90%;
+}
+
+.rentablesActions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rentablesFilter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--clr-blue-50);
+    border: 2px solid rgba(0, 0, 0, 0.18);
+    border-radius: 8px;
+    padding: 0.5rem 1rem 0.5rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--hover-duration-normal);
+}
+
+.rentablesFilter:hover {
+    border-color: var(--clr-blue-500);
+    transform: scale(1.04);
+}
+
+.rentablesBrands {
+    border: 2px solid rgba(0, 0, 0, 0.18);
+    border-radius: 8px;
+    padding: 0.6rem 0.7rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--hover-duration-normal);
+}
+
+.rentablesBrands:focus {
+    border-color: var(--clr-blue-500);
+    transform: scale(1.04);
+}
+
+.rentablesGridLayout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-inline: 3.5rem;
+}
+
+.rentablesCard {
+}
