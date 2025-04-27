@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Our Fleet | HistoryCipher</title>
         <!-- favicon -->
         <link rel="icon" href="/images/icons/favicon.ico" />
         <!-- main css - every file should have it -->
         <link rel="stylesheet" href="/styles/main.css" />
         <!-- individual css - the styles for every file -->
-        <link rel="stylesheet" href="/styles/ourFleet.css" />
+        <link rel="stylesheet" href="/styles/pricing.css" />
+        <title>Pricing</title>
     </head>
     <body>
         <header>
@@ -23,9 +23,9 @@
                     <ul class="headerNavList">
                         <li><a href="/index.html">Home</a></li>
                         <li>
-                            <a href="#">Our Fleet</a>
+                            <a href="/pages/ourFleet.html">Our Fleet</a>
                         </li>
-                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="/pages/Pricing.html">Pricing</a></li>
                         <li>
                             <a href="">Locations</a>
                         </li>
@@ -39,164 +39,168 @@
                 </button>
             </div>
         </header>
-        <section class="hero">
-            <div class="heroInformation">
-                <h1>Our Fleet</h1>
-                <p>Explore our wide range of premium vehicles</p>
-            </div>
-        </section>
-        <section class="rentablesToolbar">
-            <div class="rentablesSearch">
-                <svg
-                    class="search-icon"
-                    width="22"
-                    height="22"
-                    fill="none"
-                    stroke="#888"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                >
-                    <circle cx="11" cy="11" r="8" />
-                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                </svg>
-                <input type="text" placeholder="Search by brand or model..." />
-            </div>
-            <div class="rentablesActions">
-                <button class="rentablesFilter">
-                    <svg
-                        width="23"
-                        height="23"
-                        fill="none"
-                        stroke="#222"
-                        stroke-width="2"
-                        viewBox="0 0 24 24"
-                        opacity="0.9"
-                    >
-                        <path d="M4 4h16v2l-6 7v5l-4 2v-7L4 6V4z" />
-                    </svg>
-                    Filter
-                </button>
-                <select class="rentablesBrands">
-                    <option>All Brands</option>
-                    <option>BMW</option>
-                    <option>Mercedes</option>
-                    <option>Audi</option>
-                    <option>Toyota</option>
-                </select>
-            </div>
-        </section>
-        <section class="rentablesGridLayout">
-            <!-- they are row by row with divs, so I can use the 'appear' animation on each row -->
-            <div class="rentablesGridLayoutRow">
-                <!-- it's the first row and it will be loaded when the page is opened, so it won't have the animation -->
-                <div class="rentablesCard">
-                    <img src="/images/lambo-new.jpg" alt="car image" />
-                    <div class="rentablesCardInformation">
-                        <h3 class="rentablesCardTitle">Lamborghini Huracán</h3>
-                        <p class="rentablesCardParagraph">
-                            Petrol • High-speed • 2 Seats
-                        </p>
-                        <div class="rentablesCardPrice">
-                            <p>$360 <span>/day</span></p>
-                            <button><a href="">Book Now</a></button>
+
+        <div class="pricingTitle">
+            <h1>Transparent Pricing</h1>
+            <p>
+                Choose from our flexible pricing options to fit your needs and
+                budget
+            </p>
+        </div>
+
+        <section class="pricing">
+            <div class="pricingOptions">
+                <h3>Economy</h3>
+                <p>Perfect for short city trips</p>
+                <div class="pricingOptionsRate">
+                    <span class="pricingOptionsRateSpan"  >$50</span>
+                    <p>/day</p>
+                </div>
+                 <div class="pricingOptionsText">
+                   
+                    
+                     <div class="pricingOptionsListing">
+                         <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                         <p>Economy class vehicles</p>
+                        </div>
+                        
+                        <div class="pricingOptionsListing">
+                            <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                            <p>Basic insurance</p>
+                        </div>
+                        
+                        <div class="pricingOptionsListing">
+                            <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                            <p>24/7 roadside assistance</p>
+                        </div>
+                        
+                        <div class="pricingOptionsListing">
+                            <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                            <p>Unlimited mileage</p>
+                        </div>
+                        
+                        <div class="pricingOptionsListing">
+                            <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                            <p>1 driver included</p>
+                        </div>
+                        
+                    </div>
+                    
+                    </div>
+                    
+                    <div class="pricingOptions">
+                        <h3>Premium</h3>
+                <p>Ideal for business trips and special occasions</p>
+                <div class="pricingOptionsRate">
+                    <span class="pricingOptionsRateSpan"  >$120</span>
+                    <p>/day</p>
+                </div>
+
+                
+                <div class="pricingOptionsText">
+                    
+                    <div class="pricingOptionsListing">
+                        <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                        <p>Premium class vehicles</p>
+                    </div>
+                    
+                    <div class="pricingOptionsListing">
+                        <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                        <p>Comprehensive insurance</p>
+                    </div>
+                    
+                    <div class="pricingOptionsListing">
+                        <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                        <p>24/7 roadside assistance</p>
+                    </div>
+                    
+                    <div class="pricingOptionsListing">
+                        <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                        <p>Unlimited mileage</p>
+                    </div>
+                    
+                    <div class="pricingOptionsListing">
+                        <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                        <p>GPS navigation included</p>
+                    </div>
+                    
+                    <div class="pricingOptionsListing">
+                        <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                        <p>2 drivers included</p>
+                    </div>
+                    
+                    <div class="pricingOptionsListing">
+                        <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                        <p>Free cancellation</p>
+                    </div>
+
+                </div>
+                    
+                </div>
+
+
+             <div class="pricingOptions">
+                <h3>Luxury</h3>
+                <p>Experience ultimate luxury and performance</p>
+                <div class="pricingOptionsRate">
+                    <span class="pricingOptionsRateSpan"  >$250</span>
+                    <p>/day</p>
+                </div>
+
+                 <div class="pricingOptionsText">
+                   
+                    
+                     <div class="pricingOptionsListing">
+                         <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                         <p>Luxury and sports cars</p>
+                        </div>
+                        
+                        <div class="pricingOptionsListing">
+                            <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                            <p>Full insurance coverage</p>
+                        </div>
+                        
+                        <div class="pricingOptionsListing">
+                            <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                            <p>24/7 roadside assistance</p>
+                        </div>
+                        
+                        <div class="pricingOptionsListing">
+                            <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                            <p>Unlimited mileage</p>
+                        </div>
+                        
+                        <div class="pricingOptionsListing">
+                            <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                            <p>GPS navigation included</p>
+                        </div>
+                        
+                        <div class="pricingOptionsListing">
+                            <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                            <p>Multiple drivers included</p>
+                        </div>
+                        
+                        <div class="pricingOptionsListing">
+                            <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                            <p>Free cancellation</p>
+                        </div>
+                        
+                        <div class="pricingOptionsListing">
+                            <img src="/images/Green-Check-Mark.png.jpg" alt="" class="pricingOptionsImg">
+                            <p>Airport pickup and delivery</p>
                         </div>
                     </div>
-                </div>
-                <div class="rentablesCard">
-                    <img src="/images/lambo-new.jpg" alt="car image" />
-                    <div class="rentablesCardInformation">
-                        <h3 class="rentablesCardTitle">Lamborghini Huracán</h3>
-                        <p class="rentablesCardParagraph">
-                            Petrol • High-speed • 2 Seats
-                        </p>
-                        <div class="rentablesCardPrice">
-                            <p>$360 <span>/day</span></p>
-                            <button><a href="">Book Now</a></button>
-                        </div>
+                        
                     </div>
-                </div>
-                <div class="rentablesCard">
-                    <img src="/images/lambo-new.jpg" alt="car image" />
-                    <div class="rentablesCardInformation">
-                        <h3 class="rentablesCardTitle">Lamborghini Huracán</h3>
-                        <p class="rentablesCardParagraph">
-                            Petrol • High-speed • 2 Seats
-                        </p>
-                        <div class="rentablesCardPrice">
-                            <p>$360 <span>/day</span></p>
-                            <button><a href="">Book Now</a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="rentablesCard">
-                    <img src="/images/lambo-new.jpg" alt="car image" />
-                    <div class="rentablesCardInformation">
-                        <h3 class="rentablesCardTitle">Lamborghini Huracán</h3>
-                        <p class="rentablesCardParagraph">
-                            Petrol • High-speed • 2 Seats
-                        </p>
-                        <div class="rentablesCardPrice">
-                            <p>$360 <span>/day</span></p>
-                            <button><a href="">Book Now</a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="rentablesGridLayoutRow appear">
-                <div class="rentablesCard">
-                    <img src="/images/lambo-new.jpg" alt="car image" />
-                    <div class="rentablesCardInformation">
-                        <h3 class="rentablesCardTitle">Lamborghini Huracán</h3>
-                        <p class="rentablesCardParagraph">
-                            Petrol • High-speed • 2 Seats
-                        </p>
-                        <div class="rentablesCardPrice">
-                            <p>$360 <span>/day</span></p>
-                            <button><a href="">Book Now</a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="rentablesCard">
-                    <img src="/images/lambo-new.jpg" alt="car image" />
-                    <div class="rentablesCardInformation">
-                        <h3 class="rentablesCardTitle">Lamborghini Huracán</h3>
-                        <p class="rentablesCardParagraph">
-                            Petrol • High-speed • 2 Seats
-                        </p>
-                        <div class="rentablesCardPrice">
-                            <p>$360 <span>/day</span></p>
-                            <button><a href="">Book Now</a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="rentablesCard">
-                    <img src="/images/lambo-new.jpg" alt="car image" />
-                    <div class="rentablesCardInformation">
-                        <h3 class="rentablesCardTitle">Lamborghini Huracán</h3>
-                        <p class="rentablesCardParagraph">
-                            Petrol • High-speed • 2 Seats
-                        </p>
-                        <div class="rentablesCardPrice">
-                            <p>$360 <span>/day</span></p>
-                            <button><a href="">Book Now</a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="rentablesCard">
-                    <img src="/images/lambo-new.jpg" alt="car image" />
-                    <div class="rentablesCardInformation">
-                        <h3 class="rentablesCardTitle">Lamborghini Huracán</h3>
-                        <p class="rentablesCardParagraph">
-                            Petrol • High-speed • 2 Seats
-                        </p>
-                        <div class="rentablesCardPrice">
-                            <p>$360 <span>/day</span></p>
-                            <button><a href="">Book Now</a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    
+                </section>
+                
+                
+                
+
+
+
+
         <footer>
             <div class="footerGridLayout">
                 <div class="footerCompany">
