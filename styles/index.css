@@ -33,7 +33,7 @@
 .heroGridLayout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 1230px;
+    width: 1230px;
     margin-inline: auto;
 }
 
@@ -242,7 +242,7 @@
 /* infinite scroll animation */
 .bestSellersLayout {
     position: relative;
-    max-width: 1400px;
+    max-width: 1450px;
     margin-inline: auto;
     height: 400px;
     padding-top: 1rem;

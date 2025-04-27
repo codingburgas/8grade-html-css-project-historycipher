@@ -27,7 +27,9 @@
 }
 
 /* basic CSS resets */
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -87,7 +89,9 @@ ol {
 
 .appear {
     animation: appear linear;
-    animation-timeline: view(); /* the animation will start when it is visible to the screen */
+    animation-timeline: view(
+
+    ); /* the animation will start when it is visible to the screen */
     animation-range: entry 0% cover 40%; /* the animation will end when it reaches 40% of the screen */
 }
 
@@ -131,6 +135,31 @@ header {
     color: var(--clr-blue-600);
 }
 
+.headerNavList li a {
+    position: relative;
+    display: inline-block; /* the link behaves like an inline element but allows block-level styling */
+    padding-bottom: 2px;
+}
+
+.headerNavList li a::after {
+    content: ''; /* Creates an empty pseudo-element */
+    position: absolute; /* Positions the pseudo-element relative to the link */
+    left: 0; /* Aligns the pseudo-element to the left edge of the link */
+    bottom: 0; /* Positions the pseudo-element at the bottom of the link */
+    width: 100%;
+    height: 2.5px;
+    background: var(--clr-blue-400);
+    transform: scaleX(0); /* Initially scales the underline to 0 (hidden) */
+    transform-origin: center;
+    transition: var(--hover-duration-normal);
+    border-radius: 2px;
+}
+
+.headerNavList li a:hover::after,
+.headerNavList li a:focus::after {
+    transform: scaleX(1); /* Scales the underline to its full width */
+}
+
 .headerButton {
     background-color: var(--clr-blue-600);
     color: white;
@@ -145,41 +174,6 @@ header {
 .headerButton:hover {
     background-color: var(--clr-blue-800);
     transform: scale(1.04);
-}
-
-.dropDown {
-    position: absolute; /* without it the dropdown menu won't overflow */
-    background-color: white;
-    font-size: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    min-width: 200px;
-    margin-top: 5px;
-    opacity: 0;
-    visibility: hidden;
-    /* it's 10px above from it's normal place */
-    transform: translateY(-10px);
-    transition: var(--hover-duration-slow);
-}
-
-/* when the parent is hovered, the .dropDown will change */
-.dropDownParent:hover .dropDown {
-    opacity: 100%;
-    visibility: visible;
-    /* it's back at it's original place */
-    transform: translateY(0);
-}
-
-.dropDownElement {
-    display: block;
-    padding: 12px 14px;
-    color: var(--clr-blue-1000);
-    transition: var(--hover-duration-normal);
-}
-
-.dropDownElement:hover {
-    background-color: var(--clr-blue-100);
-    color: var(--clr-blue-600);
 }
 
 /* footer */
