@@ -79,3 +79,56 @@
     text-align: center;
     margin: 3rem 0 2.5rem 0;
 }
+
+.reviewsGridLayout {
+    display: grid;
+    /* makes it more responsible */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin-inline: auto;
+}
+
+.reviewsCard {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.cardUser {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.cardUser img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.cardUserName {
+    color: var(--clr-blue-900);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.cardUserCity {
+    font-size: 0.825rem;
+    opacity: 80%;
+}
+
+.cardStars {
+    display: flex;
+    align-items: center;
+}
+
+.reviewsDate {
+    font-size: 0.825rem;
+    opacity: 80%;
+    margin-bottom: 0.6rem;
+}
