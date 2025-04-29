@@ -46,3 +46,83 @@
 .heroInformation p {
     font-size: 1.25rem;
 }
+
+.citiesLayout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1350px;
+    margin: 3rem auto;
+    border-radius: 8px;
+}
+
+.citiesLayoutCard {
+    border-radius: inherit;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: var(--hover-duration-normal);
+}
+
+.citiesLayoutCard:hover {
+    transform: scale(1.02);
+}
+
+.cardImageContainer {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border-radius: inherit;
+}
+
+.citiesLayoutCard img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.cardImageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, var(--clr-blue-1050) 30%, var(--clr-blue-700) 100%);
+    opacity: 0.4;
+    border-radius: inherit;
+}
+
+.cardImageText {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1.3rem;
+}
+
+.cardImageText h2 {
+    font-size: 1.3rem;
+    color: var(--clr-blue-50);
+    text-shadow: 0 3px 9px var(--clr-blue-1050);
+}
+
+.cardImageText p {
+    font-size: 1rem;
+    color: var(--clr-blue-50);
+    text-shadow: 0 3px 9px var(--clr-blue-1050);
+}
+
+.cardInfo {
+    padding: 0.7rem 0.8rem;
+    display: grid;
+    gap: 0.6rem;
+}
+
+.cardInfoIconText {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cardInfoIconText p {
+    font-size: 0.935rem;
+}
