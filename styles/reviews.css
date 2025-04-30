@@ -83,10 +83,10 @@
 .reviewsGridLayout {
     display: grid;
     /* makes it more responsible */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
     max-width: 1400px;
-    margin-inline: auto;
+    margin: 0 auto 3rem auto;
 }
 
 .reviewsCard {
@@ -96,6 +96,11 @@
     padding: 1.5rem;
     display: grid;
     gap: 1rem;
+    transition: var(--hover-duration-normal);
+}
+
+.reviewsCard:hover {
+    scale: 1.02;
 }
 
 .cardUser {
