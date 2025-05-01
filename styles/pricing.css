@@ -14,9 +14,13 @@ button {
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     transform: scale(1.03);
     background-color: var(--clr-blue-200);
+}
+
+h1 {
+    font-size: 2.5rem;
 }
 
 .pricingTitle {
@@ -28,12 +32,13 @@ button:hover{
     flex-direction: column;
     align-items: center;
     font-size: 1.5rem;
+    width: 100%;
 }
 
 .pricing {
     margin: 4rem 2.5rem;
-    display: grid;
-    grid-template-columns: repeat(3, 440px);
+    display: flex;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -43,6 +48,7 @@ button:hover{
     padding: 1rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
         rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 29%;
 }
 
 .pricingOptionsRate {
@@ -52,21 +58,19 @@ button:hover{
 }
 
 .pricingOptionsRate::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 1.5px;
-    background-color: rgb(154, 188, 204);
+    background-color: rgb(176, 210, 226);
 }
-
 
 .pricingOptionsRateSpan {
     font-size: 1.5rem;
     font-weight: 700;
 }
-
 
 .pricingOptionsText {
     display: flex;
@@ -79,4 +83,33 @@ button:hover{
     display: flex;
     align-items: center;
     gap: 0.25rem;
+}
+
+.additionalServices {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+}
+
+.additionalServicesOptions {
+    display: grid;
+    grid-template-columns: repeat(3, 405px);
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.additionalServicesBox {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 18px;
+}
+
+.additionalServicesBoxPrice {
+    font-size: 1.5rem;
 }
