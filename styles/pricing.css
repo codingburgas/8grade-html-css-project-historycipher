@@ -1,60 +1,96 @@
 :root {
-    background-color: var(--clr-blue-50);
+    /* every css file should include this root */
+    --clr-blue-50: #fafdff;
+    --clr-blue-100: #ddedfc;
+    --clr-blue-200: #c2e0fb;
+    --clr-blue-300: #99cdf7;
+    --clr-blue-400: #68b1f2;
+    --clr-blue-500: #4592ec;
+    --clr-blue-600: #3076e0;
+    --clr-blue-700: #2761ce;
+    --clr-blue-800: #264fa7;
+    --clr-blue-900: #244584;
+    --clr-blue-950: #1f335f;
+    --clr-blue-1000: #172748;
+    --clr-blue-1050: #0e1629;
+
+    --ff-Montserrat: 'Montserrat';
+    --ff-Inter: 'Inter';
+
+    --hover-duration-slow: 350ms;
+    --hover-duration-normal: 300ms;
+    --hover-duration-fast: 200ms;
 }
 
-button {
-    background-color: var(--clr-blue-100);
-    color: var(--clr-blue-600);
-    font-weight: 600;
-    font-size: 0.9rem;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: var(--hover-duration-normal);
-    cursor: pointer;
+.hero {
+    background-color: var(--clr-blue-1000);
+    min-height: 13rem;
+    margin-bottom: 3rem;
 }
 
-button:hover {
-    transform: scale(1.03);
-    background-color: var(--clr-blue-200);
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-.pricingTitle {
-    padding: 5rem 0;
-    background-color: rgb(23, 37, 84);
-    color: white;
+.heroInformation {
+    color: var(--clr-blue-50);
+    min-height: 13rem;
+    max-width: 1250px;
+    margin-inline: auto;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    font-size: 1.5rem;
-    width: 100%;
+    justify-content: center;
+}
+
+.heroInformation h1 {
+    font-size: 2.225rem;
+    margin-bottom: 0.25rem;
+}
+
+.heroInformation p {
+    font-size: 1.25rem;
 }
 
 .pricing {
-    margin: 4rem 2.5rem;
+    margin: 2rem 2.5rem;
+    padding-bottom: 1rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
 
 .pricingOptions {
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px;
-    padding: 1rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    width: 29%;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 30%;
+    transition: var(--hover-duration-normal);
+}
+
+.pricingOptions:hover {
+    scale: 1.02;
+}
+
+.pricingOptionsPadding {
+    padding: 1.5rem 1rem;
+    border-radius: inherit;
+}
+
+.pricingOptionsMiddle {
+    border: 4px solid var(--clr-blue-500);
+}
+
+.pricingOptionsMiddleMostPopular {
+    background-color: var(--clr-blue-500);
+    color: white;
+    padding: 0.3rem;
+    text-align: center;
+    font-size: 0.925rem;
+    font-weight: 600;
 }
 
 .pricingOptionsRate {
     position: relative;
     display: flex;
-    align-items: center;
+    gap: 0.2rem;
+    align-items: flex-end;
+    padding-bottom: 0.3rem;
 }
 
 .pricingOptionsRate::after {
@@ -67,22 +103,57 @@ h1 {
     background-color: rgb(176, 210, 226);
 }
 
+.pricingOptions h3 {
+    font-size: 1.45rem;
+    color: var(--clr-blue-800);
+    margin-bottom: 0.3rem;
+}
+
+.pricingOptionsParagraph {
+    margin-bottom: 0.6rem;
+    opacity: 90%;
+    font-size: 0.985rem;
+}
+
 .pricingOptionsRateSpan {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: var(--clr-blue-800);
     font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.pricingOptionsRate p {
+    font-size: 1.125rem;
+    margin-bottom: 0.3rem;
 }
 
 .pricingOptionsText {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    display: grid;
+    gap: 0.6rem;
     padding: 1rem 0;
 }
 
 .pricingOptionsListing {
     display: flex;
     align-items: center;
-    gap: 0.25rem;
+    gap: 0.3rem;
+}
+
+.pricingButton {
+    background-color: var(--clr-blue-100);
+    color: var(--clr-blue-600);
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    padding: 8px 0;
+    width: 100%;
+    border-radius: 5px;
+    transition: var(--hover-duration-normal);
+    cursor: pointer;
+}
+
+.pricingButton:hover {
+    background-color: var(--clr-blue-200);
 }
 
 .additionalServices {
@@ -90,47 +161,94 @@ h1 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 5rem;
+    padding: 2rem 0 4rem 0;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+}
+
+.title {
+    font-size: 1.8rem;
+    color: var(--clr-blue-800);
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .additionalServicesOptions {
     display: grid;
     grid-template-columns: repeat(3, 405px);
     gap: 2rem;
-    margin: 1rem;
+    max-width: 1250px;
+    margin-inline: auto;
 }
 
 .additionalServicesBox {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
-    border-radius: 18px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    transition: var(--hover-duration-normal);
+}
+
+.additionalServicesBox:hover {
+    scale: 1.03;
 }
 
 .additionalServicesBoxPrice {
     font-size: 1.5rem;
+    color: var(--clr-blue-800);
+    font-weight: 800;
 }
 
-.frequentlyAskedQuestions {
+.additionalServicesBoxTitle {
+    color: var(--clr-blue-800);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.3rem;
+}
+
+.additionalServicesBoxContainer {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 5rem;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-.frequentlyAskedQuestionsBox {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-        padding: 2rem;
-        border-radius: 17px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
-        padding-left: 2.2rem;
+.additionalServicesBoxPerDay {
+    font-size: 0.9rem;
+    opacity: 90%;
+}
+
+.FAQ {
+    margin: 3rem 0 4rem 0;
+}
+
+.FAQLayout {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.FAQBox {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: grid;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: var(--hover-duration-normal);
+}
+
+.FAQBox:hover {
+    scale: 1.02;
+}
+
+.FAQBox h3 {
+    font-size: 1.3rem;
+    color: var(--clr-blue-800);
+}
+
+.FAQBox p {
+    opacity: 90%;
 }
