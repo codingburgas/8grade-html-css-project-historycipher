@@ -193,7 +193,8 @@
 }
 
 .rentablesCard:hover {
-    transform: scale(1.03); /* makes it grown in size when it's hovered */
+    transform: scale(1.03);
+    /* makes it grown in size when it's hovered */
 }
 
 .heroUniqueCars {
@@ -259,7 +260,8 @@
 
 .detailsCarsImage img {
     border-radius: inherit;
-    object-fit: cover; /* fits the image, without stretching it */
+    object-fit: cover;
+    /* fits the image, without stretching it */
 }
 
 .detailsCarsDescription {
@@ -312,7 +314,8 @@
 .detailsBook {
     /* when the page is scrolled, the section will stay on the screen */
     position: sticky;
-    top: 7rem; /* because it overflows into the navbar */
+    top: 7rem;
+    /* because it overflows into the navbar */
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     height: 290px;

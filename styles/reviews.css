@@ -178,12 +178,13 @@
     position: absolute;
     font-size: 1.1rem;
     opacity: 90%;
-    transform: translateY(
-        -50%
-    ); /* makes the label to be in the middle of the input */
-    top: 50%; /* makes the label to be in the middle of the input */
+    transform: translateY(-50%);
+    /* makes the label to be in the middle of the input */
+    top: 50%;
+    /* makes the label to be in the middle of the input */
     left: 1rem;
-    pointer-events: none; /* makes the cursor different when hovered */
+    pointer-events: none;
+    /* makes the cursor different when hovered */
     transition: var(--hover-duration-normal);
 }
 
@@ -199,7 +200,8 @@
 }
 
 .formInputGroup textarea {
-    resize: vertical; /* makes the textarea not resizable */
+    resize: vertical;
+    /* makes the textarea not resizable */
     height: 8rem;
     padding: 0.6rem 1rem;
 }
@@ -211,13 +213,14 @@
 /* The ~ label means: "Select any 'label' element that is a sibling of the 'input' element and comes after it. */
 
 /* when the input is focused, the label will be in the top of the input */
-.formInputGroup input:focus ~ label,
+.formInputGroup input:focus~label,
 /* when the input is valid (has text in it), the label will be in the top of the input */
-.formInputGroup input:valid ~ label,
+.formInputGroup input:valid~label,
 /* makes the same animation as the inputs */
-.formInputGroup textarea:focus ~ label,
-.formInputGroup textarea:valid ~ label {
-    top: 0; /* makes the label to be in the top of the input */
+.formInputGroup textarea:focus~label,
+.formInputGroup textarea:valid~label {
+    top: 0;
+    /* makes the label to be in the top of the input */
     font-size: 0.8rem;
     background-color: white;
     color: var(--clr-blue-500);
@@ -237,8 +240,10 @@
 
 .formRaitingsStars {
     display: flex;
-    flex-direction: row-reverse; /* for the hover effect to start from left to right (line 235) instead of right to left */
-    justify-content: flex-end; /* makes the row start from the left instead from the right because of the 'row-reverse' */
+    flex-direction: row-reverse;
+    /* for the hover effect to start from left to right (line 235) instead of right to left */
+    justify-content: flex-end;
+    /* makes the row start from the left instead from the right because of the 'row-reverse' */
 }
 
 .formRaitingsStars svg {
@@ -252,7 +257,7 @@
 }
 
 /* when an svg is hovered, every other svg behind it changes it's color */
-.formRaitingsStars svg:hover ~ svg {
+.formRaitingsStars svg:hover~svg {
     scale: 1.1;
     fill: #ffd900;
 }
