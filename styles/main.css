@@ -97,6 +97,29 @@ ol {
     /* the animation will end when it reaches 40% of the screen */
 }
 
+.scrollWatcher {
+    position: fixed;
+    height: 3px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(90deg, var(--clr-blue-300) 0%, var(--clr-blue-700) 100%);
+
+    transform-origin: left;
+    animation: scrollWatcher linear;
+    animation-timeline: scroll();
+}
+
+@keyframes scrollWatcher {
+    from{
+        scale: 0 1;
+    }
+
+    to {
+        scale: 1 1;
+    }
+}
+
 /* header with nav bar */
 header {
     background-color: var(--clr-blue-50);
