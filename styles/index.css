@@ -45,12 +45,15 @@
 .heroBackground video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* for the video to align to the screen */
+    object-fit: cover;
+    /* for the video to align to the screen */
 }
 
 .heroBackgroundOverlay {
-    position: absolute; /* for the overlay to be on top of the heroBackground */
-    top: 0; /* aligns it to the parent */
+    position: absolute;
+    /* for the overlay to be on top of the heroBackground */
+    top: 0;
+    /* aligns it to the parent */
     width: 100%;
     height: 100%;
     background: rgba(10, 14, 21, 0.8);
@@ -104,7 +107,8 @@
 }
 
 .heroLocationStairway {
-    position: relative; /* for it to start after the navbar, not before it */
+    position: relative;
+    /* for it to start after the navbar, not before it */
 }
 
 .heroLocationStairwayCard {
@@ -116,7 +120,8 @@
 }
 
 .heroLocationStairway a {
-    position: absolute; /* allows the cards to overflow */
+    position: absolute;
+    /* allows the cards to overflow */
     transition: var(--hover-duration-normal);
 }
 
@@ -134,14 +139,17 @@
     right: 130px;
     top: 110px;
 }
+
 .card4 {
     right: 0;
     top: 0;
 }
 
 .heroLocationStairway a:hover {
-    transform: scale(1.04); /* makes it grown in size when it's hovered */
-    z-index: 800; /* brings the card to the front */
+    transform: scale(1.04);
+    /* makes it grown in size when it's hovered */
+    z-index: 800;
+    /* brings the card to the front */
 }
 
 .heroLocationStairwayCard img {
@@ -240,27 +248,24 @@
 /* infinite scroll animation */
 .bestSellersLayout {
     position: relative;
-    max-width: 1450px;
-    margin-inline: auto;
     height: 400px;
     padding-top: 1rem;
     overflow: hidden;
     /* the first 2 rgba colors are for the left side,
        and the second 2 rgba colors are for the right side */
-    mask-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 1) 1%,
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 1%,
 
-        rgba(0, 0, 0, 1) 99%,
-        rgba(0, 0, 0, 0)
-    );
+            rgba(0, 0, 0, 1) 99%,
+            rgba(0, 0, 0, 0));
 }
 
 @keyframes scrollLeft {
     from {
         left: 100%;
     }
+
     to {
         /* the width of the items */
         left: -300px;
@@ -275,8 +280,10 @@
     transition: var(--hover-duration-normal);
     width: 300px;
 
-    --n: 5; /* numbers of items */
-    --s: 45s; /* the duration of the animation */
+    --n: 5;
+    /* numbers of items */
+    --s: 45s;
+    /* the duration of the animation */
     animation-name: scrollLeft;
     animation-duration: var(--s);
     animation-timing-function: linear;
@@ -315,7 +322,8 @@ number controls where the animation starts
 }
 
 .bestSellersLayoutCard:hover {
-    transform: scale(1.04); /* makes it grown in size when it's hovered */
+    transform: scale(1.04);
+    /* makes it grown in size when it's hovered */
 }
 
 .reservation {
@@ -334,7 +342,7 @@ number controls where the animation starts
 }
 
 .reservationContainer:hover {
-    transform: scale(1.02);
+    scale: 1.02;
 }
 
 .reservationTitle {

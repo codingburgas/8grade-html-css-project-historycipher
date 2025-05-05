@@ -1,0 +1,278 @@
+:root {
+    /* every css file should include this root */
+    --clr-blue-50: #fafdff;
+    --clr-blue-100: #ddedfc;
+    --clr-blue-200: #c2e0fb;
+    --clr-blue-300: #99cdf7;
+    --clr-blue-400: #68b1f2;
+    --clr-blue-500: #4592ec;
+    --clr-blue-600: #3076e0;
+    --clr-blue-700: #2761ce;
+    --clr-blue-800: #264fa7;
+    --clr-blue-900: #244584;
+    --clr-blue-950: #1f335f;
+    --clr-blue-1000: #172748;
+    --clr-blue-1050: #0e1629;
+
+    --ff-Montserrat: 'Montserrat';
+    --ff-Inter: 'Inter';
+
+    --hover-duration-slow: 350ms;
+    --hover-duration-normal: 300ms;
+    --hover-duration-fast: 200ms;
+}
+
+.hero {
+    background-color: var(--clr-blue-1000);
+}
+
+.heroInformation {
+    color: var(--clr-blue-50);
+    min-height: 13rem;
+    max-width: 1250px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heroInformation h1 {
+    font-size: 2.225rem;
+    margin-bottom: 0.25rem;
+}
+
+.heroInformation p {
+    font-size: 1.25rem;
+}
+
+.raitings {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.raitingsInformation {
+    color: var(--clr-blue-900);
+    min-height: 13rem;
+    max-width: 1250px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.raitingsInformation h2 {
+    font-family: var(--ff-Montserrat);
+    font-size: 2.35rem;
+}
+
+.raitingsInformation p {
+    font-size: 0.9rem;
+    opacity: 85%;
+}
+
+.reviews h3 {
+    font-size: 1.8rem;
+    color: var(--clr-blue-900);
+    text-align: center;
+    margin: 3rem 0 2.5rem 0;
+}
+
+.reviewsGridLayout {
+    display: grid;
+    /* makes it more responsible */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto 4rem auto;
+}
+
+.reviewsCard {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: grid;
+    gap: 1rem;
+    transition: var(--hover-duration-normal);
+}
+
+.reviewsCard:hover {
+    scale: 1.02;
+}
+
+.cardUser {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.cardUser img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.cardUserName {
+    color: var(--clr-blue-900);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.cardUserCity {
+    font-size: 0.825rem;
+    opacity: 80%;
+}
+
+.cardStars {
+    display: flex;
+    align-items: center;
+}
+
+.reviewsDate {
+    font-size: 0.825rem;
+    opacity: 80%;
+    margin-bottom: 0.6rem;
+}
+
+.form {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+    max-width: 750px;
+    margin-inline: auto;
+    padding: 2rem;
+    transition: var(--hover-duration-normal);
+    margin-bottom: 3rem;
+}
+
+.form:hover {
+    scale: 1.02;
+}
+
+.form form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form h3 {
+    font-size: 1.5rem;
+    color: var(--clr-blue-900);
+}
+
+.formContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.formInputGroup {
+    /* makes the label and input to be in the same line */
+    position: relative;
+}
+
+.formInputGroup label {
+    position: absolute;
+    font-size: 1.1rem;
+    opacity: 90%;
+    transform: translateY(-50%);
+    /* makes the label to be in the middle of the input */
+    top: 50%;
+    /* makes the label to be in the middle of the input */
+    left: 1rem;
+    pointer-events: none;
+    /* makes the cursor different when hovered */
+    transition: var(--hover-duration-normal);
+}
+
+.formInputGroup input,
+.formInputGroup textarea {
+    width: 100%;
+    height: 3rem;
+    padding: 0 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.18);
+    opacity: 80%;
+    outline: none;
+    border-radius: 8px;
+}
+
+.formInputGroup textarea {
+    resize: vertical;
+    /* makes the textarea not resizable */
+    height: 8rem;
+    padding: 0.6rem 1rem;
+}
+
+.formInputGroupComment label {
+    top: 18%;
+}
+
+/* The ~ label means: "Select any 'label' element that is a sibling of the 'input' element and comes after it. */
+
+/* when the input is focused, the label will be in the top of the input */
+.formInputGroup input:focus~label,
+/* when the input is valid (has text in it), the label will be in the top of the input */
+.formInputGroup input:valid~label,
+/* makes the same animation as the inputs */
+.formInputGroup textarea:focus~label,
+.formInputGroup textarea:valid~label {
+    top: 0;
+    /* makes the label to be in the top of the input */
+    font-size: 0.8rem;
+    background-color: white;
+    color: var(--clr-blue-500);
+    padding: 0 0.2rem;
+}
+
+.formInputGroup input:focus,
+.formInputGroup textarea:focus {
+    border: 2px solid var(--clr-blue-500);
+    box-shadow: 0 0 0 2px var(--clr-blue-100);
+}
+
+.formRaitings label {
+    opacity: 80%;
+    margin-bottom: 0.8rem;
+}
+
+.formRaitingsStars {
+    display: flex;
+    flex-direction: row-reverse;
+    /* for the hover effect to start from left to right (line 235) instead of right to left */
+    justify-content: flex-end;
+    /* makes the row start from the left instead from the right because of the 'row-reverse' */
+}
+
+.formRaitingsStars svg {
+    cursor: pointer;
+    transition: var(--hover-duration-slow);
+}
+
+.formRaitingsStars svg:hover {
+    scale: 1.2;
+    fill: #ffd900;
+}
+
+/* when an svg is hovered, every other svg behind it changes it's color */
+.formRaitingsStars svg:hover~svg {
+    scale: 1.1;
+    fill: #ffd900;
+}
+
+.formInputGroupSubmit {
+    background-color: var(--clr-blue-600);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    transition: var(--hover-duration-normal);
+    cursor: pointer;
+}
+
+.formInputGroupSubmit:hover {
+    background-color: var(--clr-blue-800);
+}

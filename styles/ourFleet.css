@@ -68,7 +68,7 @@
 /* with .rentablesSearch:focus it doesn't work */
 .rentablesSearch:focus-within {
     border-color: var(--clr-blue-500);
-    transform: scale(1.02);
+    scale: 1.02;
 }
 
 .rentablesSearch input {
@@ -101,7 +101,7 @@
 
 .rentablesFilter:hover {
     border-color: var(--clr-blue-500);
-    transform: scale(1.04);
+    scale: 1.04;
 }
 
 .rentablesBrands {
@@ -115,12 +115,15 @@
 
 .rentablesBrands:focus {
     border-color: var(--clr-blue-500);
-    transform: scale(1.04);
+    scale: 1.04;
 }
 
 .rentablesGridLayout {
+    display: grid;
+    gap: 2rem;
     max-width: 1350px;
     margin-inline: auto;
+    margin-bottom: 3rem;
 }
 
 /* they are row by row with divs, so I can use the 'appear' animation on each row */
@@ -133,7 +136,6 @@
 .rentablesCard {
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    margin-bottom: 2rem;
     transition: var(--hover-duration-normal);
 }
 
@@ -142,6 +144,7 @@
     height: 210px;
     border-top-right-radius: inherit;
     border-top-left-radius: inherit;
+    object-fit: cover;
 }
 
 .rentablesCardInformation {
@@ -193,7 +196,7 @@
 }
 
 .rentablesCard:hover {
-    transform: scale(1.03); /* makes it grown in size when it's hovered */
+    scale: 1.03;
 }
 
 .heroUniqueCars {
@@ -230,7 +233,7 @@
 }
 
 .details {
-    max-width: 1450px;
+    max-width: 1400px;
     margin: 3rem auto 2rem auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -259,7 +262,8 @@
 
 .detailsCarsImage img {
     border-radius: inherit;
-    object-fit: cover; /* fits the image, without stretching it */
+    object-fit: cover;
+    /* fits the image, without stretching it */
 }
 
 .detailsCarsDescription {
@@ -312,7 +316,8 @@
 .detailsBook {
     /* when the page is scrolled, the section will stay on the screen */
     position: sticky;
-    top: 7rem; /* because it overflows into the navbar */
+    top: 7rem;
+    /* because it overflows into the navbar */
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     height: 290px;
