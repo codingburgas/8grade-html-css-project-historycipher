@@ -44,3 +44,74 @@
 .heroInformation p {
 	font-size: 1.25rem;
 }
+
+.story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    color: var(--clr-blue-900);
+}
+
+.storyParagraphs {
+    margin-top: 1rem;
+    display: grid;
+    gap: 0.6rem;
+    opacity: 90%;
+}
+
+.storyCol2 img {
+    border-radius: 8px;
+}
+
+.value {
+    background-color: white;
+    padding: 3rem 2rem 4rem 2rem;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+}
+
+.valueTitle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.valueGridLayout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.valueItem {
+    background-color: var(--clr-blue-50);
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+    padding: 1.5rem;
+    transition: var(--hover-duration-normal);
+}
+
+.valueItem:hover {
+    scale: 1.02;
+}
+
+.itemIcon {
+    display: inline-block;
+    background-color: var(--clr-blue-200);
+    padding: 0.7rem;
+    border-radius: 50%;
+    margin-bottom: 0.3rem;
+}
+
+.valueItem h3 {
+    font-size: 1.325rem;
+    color: var(--clr-blue-900);
+    margin-bottom: 0.4rem;
+}
+
+.valueItem p {
+    font-size: 0.925rem;
+    opacity: 90%;
+}
