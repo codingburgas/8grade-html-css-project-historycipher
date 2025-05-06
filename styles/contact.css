@@ -48,7 +48,7 @@
 .info {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 3rem;
     padding: 4rem;
 }
 
@@ -82,7 +82,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 3rem;
     margin-inline: 4rem;
     margin: 2rem 4rem 4rem 4rem;
     border-radius: 8px;
@@ -95,6 +95,10 @@
     border-radius: inherit;
     transition: var(--hover-duration-normal);
     padding: 2rem;
+}
+
+.form:hover {
+    scale: 1.02;
 }
 
 .form form {
@@ -193,6 +197,53 @@
 }
 
 /* second half */
-.faq {
-    border: 1px solid black;
+.faq h3 {
+    font-size: 1.5rem;
+    color: var(--clr-blue-900);
+    margin-bottom: 1.5rem;
+}
+
+.faqContainer {
+    display: grid;
+    gap: 2rem;
+}
+
+.faqBox {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: var(--hover-duration-normal);
+}
+
+.faqBox:hover {
+    scale: 1.02;
+}
+
+.faqBox h4 {
+    font-size: 1.125rem;
+    color: var(--clr-blue-900);
+    margin-bottom: 0.6rem;
+}
+
+.faqBox p {
+    opacity: 90%;
+    font-size: 0.935rem;
+}
+
+.faqNoAnswerBox {
+    background-color: #ddedfc80;
+    /* --clr-blue-100: #ddedfc; but with lighter opacity */
+    border-radius: 8px;
+    padding: 1rem;
+    transition: var(--hover-duration-normal);
+}
+
+.faqNoAnswerBox:hover {
+    scale: 1.02;
+}
+
+.faqNoAnswerBox p {
+    font-size: 0.935rem;
+    color: var(--clr-blue-900);
 }
