@@ -1,0 +1,207 @@
+:root {
+    /* every css file should include this root */
+    --clr-blue-50: #fafdff;
+    --clr-blue-100: #ddedfc;
+    --clr-blue-200: #c2e0fb;
+    --clr-blue-300: #99cdf7;
+    --clr-blue-400: #68b1f2;
+    --clr-blue-500: #4592ec;
+    --clr-blue-600: #3076e0;
+    --clr-blue-700: #2761ce;
+    --clr-blue-800: #264fa7;
+    --clr-blue-900: #244584;
+    --clr-blue-950: #1f335f;
+    --clr-blue-1000: #172748;
+    --clr-blue-1050: #0e1629;
+
+    --ff-Montserrat: 'Montserrat';
+    --ff-Inter: 'Inter';
+
+    --hover-duration-slow: 350ms;
+    --hover-duration-normal: 300ms;
+    --hover-duration-fast: 200ms;
+}
+
+.hero {
+    background-color: var(--clr-blue-1000);
+    min-height: 8rem;
+    margin-bottom: 3rem;
+}
+
+.heroInformation {
+    color: var(--clr-blue-50);
+    max-width: 1250px;
+    margin-inline: auto;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heroInformation h1 {
+    font-size: 2rem;
+}
+
+.bookingSteps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin: 2rem 0 3rem 0;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.stepIcon {
+    padding: 0.7rem;
+    border-radius: 50%;
+    background-color: #e0e8f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stepLabel {
+    font-size: 0.875rem;
+    font-weight: 600;
+    opacity: 90%;
+}
+
+.stepSeparator {
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #e0e8f4;
+    margin: 0 0.5rem;
+}
+
+.highlightedIcon {
+    background-color: var(--clr-blue-800);
+}
+
+.highlightedText {
+    color: var(--clr-blue-900);
+}
+
+main {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 1250px;
+    margin-inline: auto;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+    padding: 1.8rem;
+    transition: var(--hover-duration-normal);
+}
+
+.card:hover {
+    scale: 1.01;
+}
+
+.cardTitle {
+    font-size: 1.325rem;
+    color: var(--clr-blue-900);
+    margin-bottom: 1rem;
+}
+
+.cardInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardInfo div h3 {
+    font-size: 1.125rem;
+}
+
+.cardInfo div p {
+    font-size: 1rem;
+    opacity: 90%;
+}
+
+.cardInfoPrice span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--clr-blue-1050);
+    opacity: 85%;
+}
+
+.cardInfoPrice {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--clr-blue-900);
+}
+
+.reservationDate {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: var(--gap);
+}
+
+.reservationDateRow input {
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.18);
+}
+
+.reservationDateRow input:focus {
+    outline: none;
+    border: 2px solid var(--clr-blue-500);
+    box-shadow: 0 0 0 2px var(--clr-blue-100);
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.navigationButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    padding: 0 1rem;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+}
+
+.previousButton {
+    background-color: var(--clr-blue-50);
+    color: var(--clr-blue-800);
+    font-weight: 600;
+    border: 1px solid var(--clr-blue-600);
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--hover-duration-normal);
+}
+
+.previousButton:hover {
+    background-color: var(--clr-blue-200);
+    scale: 1.04;
+}
+
+.nextButton {
+    background-color: var(--clr-blue-600);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 0.5rem 1.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--hover-duration-normal);
+}
+
+.nextButton:hover {
+    background-color: var(--clr-blue-800);
+    scale: 1.04;
+}
