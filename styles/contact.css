@@ -44,3 +44,37 @@
 .heroInformation p {
     font-size: 1.25rem;
 }
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 4rem;
+}
+
+.infoCard {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: var(--hover-duration-normal);
+}
+
+.infoCard:hover {
+    scale: 1.03;
+}
+
+.infoCardTextIcon {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 0.875rem;
+    color: var(--clr-blue-800);
+    margin-bottom: 1rem;
+}
+
+.infoCard p {
+    opacity: 90%;
+    font-size: 0.935rem;
+    margin-bottom: 0.5rem;
+}
