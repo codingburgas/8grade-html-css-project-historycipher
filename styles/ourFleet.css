@@ -320,7 +320,7 @@
     /* because it overflows into the navbar */
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    height: 290px;
+    height: fit-content;
     border-radius: inherit;
     padding: 1.5rem;
 }

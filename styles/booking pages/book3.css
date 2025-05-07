@@ -1,0 +1,248 @@
+:root {
+    /* every css file should include this root */
+    --clr-blue-50: #fafdff;
+    --clr-blue-100: #ddedfc;
+    --clr-blue-200: #c2e0fb;
+    --clr-blue-300: #99cdf7;
+    --clr-blue-400: #68b1f2;
+    --clr-blue-500: #4592ec;
+    --clr-blue-600: #3076e0;
+    --clr-blue-700: #2761ce;
+    --clr-blue-800: #264fa7;
+    --clr-blue-900: #244584;
+    --clr-blue-950: #1f335f;
+    --clr-blue-1000: #172748;
+    --clr-blue-1050: #0e1629;
+
+    --ff-Montserrat: 'Montserrat';
+    --ff-Inter: 'Inter';
+
+    --hover-duration-slow: 350ms;
+    --hover-duration-normal: 300ms;
+    --hover-duration-fast: 200ms;
+}
+
+.hero {
+    background-color: var(--clr-blue-1000);
+    min-height: 8rem;
+    margin-bottom: 3rem;
+}
+
+.heroInformation {
+    color: var(--clr-blue-50);
+    max-width: 1250px;
+    margin-inline: auto;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heroInformation h1 {
+    font-size: 2rem;
+}
+
+.bookingSteps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin: 2rem 0 3rem 0;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.stepIcon {
+    padding: 0.7rem;
+    border-radius: 50%;
+    background-color: #e0e8f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stepLabel {
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 90%;
+}
+
+.stepSeparator {
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #e0e8f4;
+    margin: 0 0.5rem;
+}
+
+.highlightedSeparator {
+    background-color: var(--clr-blue-800);
+}
+
+.highlightedIcon {
+    background-color: var(--clr-blue-800);
+}
+
+.highlightedText {
+    color: var(--clr-blue-900);
+}
+
+.form {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+    max-width: 1220px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.form form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form h3 {
+    font-size: 1.5rem;
+    color: var(--clr-blue-900);
+}
+
+.formContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.formInputGroup {
+    /* makes the label and input to be in the same line */
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.formInputGroup label {
+    position: absolute;
+    opacity: 90%;
+    transform: translateY(-50%);
+    /* makes the label to be in the middle of the input */
+    top: 50%;
+    /* makes the label to be in the middle of the input */
+    left: 1rem;
+    pointer-events: none;
+    /* makes the cursor different when hovered */
+    transition: var(--hover-duration-normal);
+}
+
+.formInputGroup input {
+    width: 100%;
+    height: 3rem;
+    padding: 0 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    opacity: 80%;
+    outline: transparent;
+    border-radius: 8px;
+}
+
+/* The ~ label means: "Select any 'label' element that is a sibling of the 'input' element and comes after it. */
+
+/* when the input is focused, the label will be in the top of the input */
+.formInputGroup input:focus~label,
+/* when the input is valid (has text in it), the label will be in the top of the input */
+.formInputGroup input:valid~label {
+    top: 0;
+    /* makes the label to be in the top of the input */
+    font-size: 0.8rem;
+    background-color: white;
+    color: var(--clr-blue-500);
+    padding: 0 0.2rem;
+}
+
+.formInputGroup input:focus {
+    border: 2px solid var(--clr-blue-500);
+    box-shadow: 0 0 0 2px var(--clr-blue-100);
+}
+
+.expDate {
+    display: grid;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.expDate label {
+    position: absolute;
+    background-color: white;
+    opacity: 90%;
+    top: -20%;
+    left: 1rem;
+    padding: 0 0.2rem;
+    font-size: 0.8rem;
+    z-index: 10;
+    transition: var(--hover-duration-normal);
+}
+
+.expDate input {
+    height: 3rem;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    padding: 0 1rem;
+    font-size: 1rem;
+    opacity: 0.8;
+    outline: transparent;
+    background: white;
+    transition: var(--hover-duration-normal);
+}
+
+.expDate input:focus {
+    border: 2px solid var(--clr-blue-500);
+    box-shadow: 0 0 0 2px var(--clr-blue-100);
+}
+
+.expDate input:focus~label {
+    top: -20%;
+    color: var(--clr-blue-500);
+}
+
+.navigationButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    padding: 0 1rem;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+}
+
+.previousButton {
+    background-color: var(--clr-blue-50);
+    color: var(--clr-blue-800);
+    font-weight: 600;
+    border: 1px solid var(--clr-blue-600);
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--hover-duration-normal);
+}
+
+.previousButton:hover {
+    background-color: var(--clr-blue-200);
+    scale: 1.04;
+}
+
+.nextButton {
+    background-color: var(--clr-blue-600);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 0.5rem 1.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--hover-duration-normal);
+}
+
+.nextButton:hover {
+    background-color: var(--clr-blue-800);
+    scale: 1.04;
+}
