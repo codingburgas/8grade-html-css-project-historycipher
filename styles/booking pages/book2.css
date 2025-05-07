@@ -1,0 +1,194 @@
+:root {
+    /* every css file should include this root */
+    --clr-blue-50: #fafdff;
+    --clr-blue-100: #ddedfc;
+    --clr-blue-200: #c2e0fb;
+    --clr-blue-300: #99cdf7;
+    --clr-blue-400: #68b1f2;
+    --clr-blue-500: #4592ec;
+    --clr-blue-600: #3076e0;
+    --clr-blue-700: #2761ce;
+    --clr-blue-800: #264fa7;
+    --clr-blue-900: #244584;
+    --clr-blue-950: #1f335f;
+    --clr-blue-1000: #172748;
+    --clr-blue-1050: #0e1629;
+
+    --ff-Montserrat: 'Montserrat';
+    --ff-Inter: 'Inter';
+
+    --hover-duration-slow: 350ms;
+    --hover-duration-normal: 300ms;
+    --hover-duration-fast: 200ms;
+}
+
+.hero {
+    background-color: var(--clr-blue-1000);
+    min-height: 8rem;
+    margin-bottom: 3rem;
+}
+
+.heroInformation {
+    color: var(--clr-blue-50);
+    max-width: 1250px;
+    margin-inline: auto;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heroInformation h1 {
+    font-size: 2rem;
+}
+
+.bookingSteps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin: 2rem 0 3rem 0;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.stepIcon {
+    padding: 0.7rem;
+    border-radius: 50%;
+    background-color: #e0e8f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stepLabel {
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 90%;
+}
+
+.stepSeparator {
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #e0e8f4;
+    margin: 0 0.5rem;
+}
+
+.highlightedSeparator {
+    background-color: var(--clr-blue-800);
+}
+
+.highlightedIcon {
+    background-color: var(--clr-blue-800);
+}
+
+.highlightedText {
+    color: var(--clr-blue-900);
+}
+
+.checkGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1250px;
+    margin: 0 auto 3rem auto;
+    padding: 0 1rem;
+}
+
+.checkCard {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 2rem 2rem 1.5rem 1.5rem;
+    cursor: pointer;
+    gap: 1rem;
+    transition: var(--hover-duration-normal);
+}
+
+.checkCard:hover {
+    scale: 1.01;
+}
+
+.checkCard input {
+    width: 24px;
+    height: 24px;
+    margin-top: 0.2rem;
+    margin-right: 0.8rem;
+    cursor: pointer;
+}
+
+/* Adds a line-through to the title of a checkCard when the 'input' is checked */
+.checkCard input:checked ~ .checkContent .checkTitle {
+    text-decoration: line-through;
+}
+
+.checkContent {
+    display: grid;
+    gap: 0.2rem;
+}
+
+.checkTitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+}
+
+.checkDesc {
+    opacity: 90%;
+    margin-bottom: 0.2rem;
+}
+
+.checkPrice {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--clr-blue-700);
+    margin-top: 0.3rem;
+}
+
+.navigationButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    padding: 0 1rem;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+}
+
+.previousButton {
+    background-color: var(--clr-blue-50);
+    color: var(--clr-blue-800);
+    font-weight: 600;
+    border: 1px solid var(--clr-blue-600);
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--hover-duration-normal);
+}
+
+.previousButton:hover {
+    background-color: var(--clr-blue-200);
+    scale: 1.04;
+}
+
+.nextButton {
+    background-color: var(--clr-blue-600);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 0.5rem 1.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--hover-duration-normal);
+}
+
+.nextButton:hover {
+    background-color: var(--clr-blue-800);
+    scale: 1.04;
+}
