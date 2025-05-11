@@ -262,8 +262,9 @@
 
 .detailsCarsImage img {
     border-radius: inherit;
-    object-fit: cover;
     /* fits the image, without stretching it */
+    object-fit: cover;
+    width:100%
 }
 
 .detailsCarsDescription {
