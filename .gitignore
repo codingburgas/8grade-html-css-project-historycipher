@@ -1,0 +1,11 @@
+# Ignores macOS system files
+.DS_Store
+._*
+
+# Ignores Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignores VS Code settings
+.vscode/
