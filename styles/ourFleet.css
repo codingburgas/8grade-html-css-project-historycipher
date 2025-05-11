@@ -380,3 +380,18 @@
     background-color: var(--clr-blue-100);
     scale: 1.03;
 }
+
+.detailsBookImages {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.detailsBookImages img {
+    width: 50px;
+    height: 100%;
+    object-fit: cover;
+}
